@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Producto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Producto">
+
+        <Button
+            android:id="@+id/btniniciarcompra"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="136dp"
+            android:layout_marginEnd="15dp"
+            android:text="Añadir al carrito"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="119dp" />
+
+        <ImageView
+            android:id="@+id/juegoelegido"
+            android:layout_width="162dp"
+            android:layout_height="151dp"
+            android:layout_alignStart="@+id/descripcion"
+            android:layout_alignBottom="@+id/btniniciarcompra"
+            app:srcCompat="@color/colorAccent"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/Nombre"
+            android:layout_width="156dp"
+            android:layout_height="37dp"
+            android:layout_alignStart="@+id/btniniciarcompra"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="41dp"
+            tools:layout_editor_absoluteX="211dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:layout_width="327dp"
+            android:layout_height="210dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="79dp"
+            tools:layout_editor_absoluteX="32dp"
+            tools:layout_editor_absoluteY="205dp" />
+
+        <TextView
+            android:id="@+id/precio"
+            android:layout_width="94dp"
+            android:layout_height="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="97dp"
+            android:layout_marginEnd="46dp"
+            tools:layout_editor_absoluteX="254dp"
+            tools:layout_editor_absoluteY="69dp" />
+
+        <Button
+            android:id="@+id/btnregreso"
+            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="17dp"
+            android:text="atras" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
